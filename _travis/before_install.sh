@@ -58,7 +58,8 @@ get_gsl 2.2.1
 ls -la /tmp/
 ls -la /tmp/gsl-2.2.1/bin
 
-cd /home/travis/build/leto/math--gsl
+#cd /home/travis/build/leto/math--gsl
+cd /home/travis/build/azhar2005/math--gsl
 cur_dir=`pwd`
 echo "current dir $cur_dir"
 LD_LIBRARY_PATH=/tmp/gsl-2.2.1/lib:$LD_LIBRARY_PATH PATH=/tmp/gsl-2.2.1/bin:$PATH perl Build.PL && ./Build && ./Build dist # create a CPAN dist with latest supported GSL release
