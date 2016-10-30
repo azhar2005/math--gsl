@@ -47,6 +47,7 @@ cpanm -n PkgConfig
 export ORIG_DIR=`pwd`
 echo ORIG_DIR=$ORIG_DIR
 cd /tmp
+echo "Inside /tmp now" 
 #get_gsl 1.15
 #get_gsl 1.16
 #get_gsl 2.0
@@ -56,9 +57,13 @@ get_master_gsl
 
 ls -la /tmp/
 ls -la /tmp/gsl-2.2.1/bin
+
 cd /home/travis/build/leto/math--gsl
+cur_dir=`pwd`
+echo "current dir $cur_dir"
 LD_LIBRARY_PATH=/tmp/gsl-2.2.1/lib:$LD_LIBRARY_PATH PATH=/tmp/gsl-2.2.1/bin:$PATH perl Build.PL && ./Build && ./Build dist # create a CPAN dist with latest supported GSL release
 cp Math-GSL*.tar.gz /tmp
 ls -la /tmp/Math-GSL*.tar.gz # now we have a CPAN dist to test on each version of GSL
 cd $ORIG_DIR
+echo "Current dir $ORIG_DIR"
 
