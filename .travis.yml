@@ -30,12 +30,12 @@ env:
         - CCACHE_CPP2=1
         - CC="ccache clang"
     matrix:
-#        - GSL=2.2.1
+        - GSL=2.2.1
 #        - GSL=2.1
 #        - GSL=2.0
 #        - GSL=1.16
 #        - GSL=1.15
-        - GSL=master
+#        - GSL=master
 
 addons:
   apt:

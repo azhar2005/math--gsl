@@ -52,8 +52,8 @@ echo "Inside /tmp now"
 #get_gsl 1.16
 #get_gsl 2.0
 #get_gsl 2.1
-#get_gsl 2.2.1
-get_master_gsl
+get_gsl 2.2.1
+#get_master_gsl
 
 ls -la /tmp/
 ls -la /tmp/gsl-2.2.1/bin
