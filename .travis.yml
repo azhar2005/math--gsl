@@ -47,9 +47,9 @@ addons:
       - texinfo
 
 before_install: 
+      - ./_travis/before_install.sh
       - git clone git://github.com/travis-perl/helpers ~/travis-perl-helpers
       - source ~/travis-perl-helpers/init --auto
-      - ./_travis/before_install.sh
 
 # Add verbosity for debugging
 install:
