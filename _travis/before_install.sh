@@ -47,11 +47,11 @@ cpanm -n PkgConfig
 export ORIG_DIR=`pwd`
 echo ORIG_DIR=$ORIG_DIR
 cd /tmp
-get_gsl 1.15
-get_gsl 1.16
-get_gsl 2.0
-get_gsl 2.1
-get_gsl 2.2.1
+#get_gsl 1.15
+#get_gsl 1.16
+#get_gsl 2.0
+#get_gsl 2.1
+#get_gsl 2.2.1
 get_master_gsl
 
 ls -la /tmp/
